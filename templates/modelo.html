@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <title>BLOG</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}"> 
+    <link rel="icon" href="../static/favicon.ico.png">
+</head>
+<body>
+    <header>
+        <h1>Meu Blog</h1>
+    </header>
+    <main>
+        {% block conteudo %}
+        {% endblock %}
+    </main>
+    <footer>
+        <p>&copy; 2024 Meu Blog</p> 
+    </footer>
+</body>
+</html>
